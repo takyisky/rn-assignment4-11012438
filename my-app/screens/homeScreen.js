@@ -173,13 +173,21 @@ const HomeScreen = ({ route }) => {
             placeholder="Search a job or position"
           />
         </View>
-        <Text style={styles.fjsectionTitle}>Featured Jobs</Text>
+        <View style={{ flexDirection:'row', justifyContent: 'space-between', alignItems: 'center',}} >
+          <Text style={styles.fjsectionTitle}>Featured Jobs</Text>
+          <Text style={styles.fjseealltext}> See all </Text>
+        </View>
+        
         <ScrollView horizontal={true} style={styles.featuredJobsContainer}>
           {featuredJobs.map((job, index) => (
             <FeaturedJobCard key={index} {...job} />
           ))}
         </ScrollView>
-        <Text style={styles.pjsectionTitle}>Popular Jobs</Text>
+        <View style={{ flexDirection:'row', justifyContent: 'space-between', alignItems: 'center',}} >
+          <Text style={styles.pjsectionTitle}>Popular Jobs</Text>
+          <Text style={styles.pjseealltext}> See all </Text>
+        </View>
+        
         {popularJobs.map((job, index) => (
           <JobCard key={index} {...job} />
         ))}
@@ -232,6 +240,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10,
   },
+  fjseealltext:{
+    marginTop: 15,
+    marginBottom: 10,
+    color: 'gray',
+  },
   featuredJobsContainer: {
     padding: 10,
   },
@@ -240,6 +253,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10,
     marginTop: 30,
+  },
+  pjseealltext:{
+    marginBottom: 10,
+    marginTop: 30,
+    color:'gray',
   },
 });
 
