@@ -23,14 +23,14 @@ const FeaturedJobCard = ({ logoPath, jobTitle, companyName, salary, location, ba
 
 const styles = StyleSheet.create({
   featuredJobCard: {
-    
+   
     borderRadius: 25,
     shadowColor: '#000',
     shadowOpacity: 0.1,
     shadowRadius: 5,
     shadowOffset: { width: 0, height: 2 },
     marginRight: 10,
-    width: 280,
+    width: 300,
     
   },
   innerfeaturedJobCard: {

@@ -16,7 +16,9 @@ const HomeScreen = ({ route }) => {
   const { name, email } = route.params;
 
   const featuredJobs = [
+    //Featured blog cards
     {
+      //Facebook
       logoPath: require('../assets/Facebook2.png'),
       jobTitle: 'Software Engineer',
       companyName: 'Facebook',
@@ -24,10 +26,74 @@ const HomeScreen = ({ route }) => {
       location: 'Accra, Ghana',
       backgroundColor: '#356899',
     },
-    // Add 7 more featured job objects here
+    {
+      //Git Hub
+      logoPath: require('../assets/githublogo.jpeg'),
+      jobTitle: 'Software Architect',
+      companyName: 'Github',
+      salary: '$480,000',
+      location: 'Accra, Sunyani',
+      backgroundColor: '#000',
+    },
+    {
+      //Pinterest
+      logoPath: require('../assets/pinterestlogo.jpeg'),
+      jobTitle: 'Designer',
+      companyName: 'Pinterest',
+      salary: '$80,000',
+      location: 'Tamale, Ghana',
+      backgroundColor: '#f01e2c',
+    },
+    {
+      //Uber
+      logoPath: require('../assets/uberlogo.jpeg'),
+      jobTitle: 'Driver',
+      companyName: 'Uber',
+      salary: '$80,000',
+      location: 'Tamale, Ghana',
+      backgroundColor: '#131313',
+    },
+    {
+    //Bolt
+      logoPath: require('../assets/boltlogo.jpeg'),
+      jobTitle: 'Driver',
+      companyName: 'Bolt',
+      salary: '$80,000',
+      location: 'Tamale, Ghana',
+      backgroundColor: '#4cbb17',
+    },
+    {
+    //Amazon
+      logoPath: require('../assets/amazonlogo.jpeg'),
+      jobTitle: 'Sales Person',
+      companyName: 'Amazon',
+      salary: '$80,000',
+      location: 'Tamale, Ghana',
+      backgroundColor: '#e6cc00',
+    },
+    {
+      //Ali express
+        logoPath: require('../assets/aliexpresslogo.jpeg'),
+        jobTitle: 'Sales Person',
+        companyName: 'Ali Express',
+        salary: '$80,000',
+        location: 'Tamale, Ghana',
+        backgroundColor: '#A8092d',
+    },
+    {
+      //Twitter
+        logoPath: require('../assets/twitterlogo.jpeg'),
+        jobTitle: 'Fronend Developer',
+        companyName: 'Twitter',
+        salary: '$980,000',
+        location: 'Tamale, Ghana',
+        backgroundColor: '#04356a',
+    },
+
   ];
 
   const popularJobs = [
+    //Popular job cards
     {
       logoPath: require('../assets/burgerkinglogo.png'),
       jobTitle: 'Jr Executive',
@@ -35,7 +101,56 @@ const HomeScreen = ({ route }) => {
       salary: '$96,000/y',
       location: 'Los Angeles, US',
     },
-    // Add 7 more popular job objects here
+    {
+      logoPath: require('../assets/beatslogo.png'),
+      jobTitle: 'Product Manager',
+      companyName: 'Beats',
+      salary: '$96,000/y',
+      location: 'Los Angeles, US',
+    },
+    {
+      logoPath: require('../assets/Facebook2.png'),
+      jobTitle: 'Product Manager ',
+      companyName: 'Facebook',
+      salary: '$96,000/y',
+      location: 'Los Angeles, US',
+    },
+    {
+      logoPath: require('../assets/githublogo.jpeg'),
+      jobTitle: 'Frontend Developer',
+      companyName: 'Github',
+      salary: '$96,000/y',
+      location: 'Los Angeles, US',
+    },
+    {
+      logoPath: require('../assets/twitterlogo.jpeg'),
+      jobTitle: 'Backend Developer',
+      companyName: 'Twitter',
+      salary: '$96,000/y',
+      location: 'Los Angeles, US',
+    },
+    {
+      logoPath: require('../assets/googlelogo.jpeg'),
+      jobTitle: 'Database Manager',
+      companyName: 'Google',
+      salary: '$96,000/y',
+      location: 'Los Angeles, US',
+    },
+    {
+      logoPath: require('../assets/amazonlogo.jpeg'),
+      jobTitle: 'CEO',
+      companyName: 'Amazon',
+      salary: '$96,000/y',
+      location: 'Los Angeles, US',
+    },
+    {
+      logoPath: require('../assets/pinterestlogo.jpeg'),
+      jobTitle: 'Content Creator',
+      companyName: 'Pinterest',
+      salary: '$96,000/y',
+      location: 'Los Angeles, US',
+    },
+
   ];
 
   return (
@@ -112,6 +227,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   fjsectionTitle: {
+    marginTop: 15,
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 10,
