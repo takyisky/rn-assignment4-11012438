@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
 const LoginScreen = ({ navigation }) => {
   const [name, setName] = useState('');
@@ -31,7 +30,7 @@ const LoginScreen = ({ navigation }) => {
         value={email}
         onChangeText={setEmail}
       />
-      <TouchableOpacity style={styles.button} >
+      <TouchableOpacity style={styles.button} onPress={handleLogin} >
         <Text style={styles.buttonText}>Log in</Text>
       </TouchableOpacity>
 
