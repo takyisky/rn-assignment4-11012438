@@ -19,8 +19,8 @@ const HomeScreen = ({ route }) => {
     
 
     <SafeAreaView style={styles.safeArea}>
-      <View><Text>Your name : </Text></View>
-      <View><Text>Your email : </Text></View>
+      <View><Text>Your name : {name}</Text></View>
+      <View><Text>Your email : {email}</Text></View>
     </SafeAreaView>
   );
 };
