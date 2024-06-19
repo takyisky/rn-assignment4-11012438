@@ -167,12 +167,26 @@ const HomeScreen = ({ route }) => {
             style={styles.profileImage}
           />
         </View>
+
         <View style={styles.searchContainer}>
-          <TextInput
-            style={styles.searchInput}
-            placeholder="Search a job or position"
-          />
+          <View style={styles.searchInputContainer}>
+              <Image
+                source={require('../assets/searchIcon.png')}
+                style={styles.searchIcon}
+              />
+              <TextInput
+                style={styles.searchInput}
+                placeholder="Search a job or position"
+              />
+            </View>
+          <View style={styles.filterIconContainer}>
+            <Image
+              source={require('../assets/filter.png')}
+              style={styles.filterIcon}
+            />
+          </View>
         </View>
+
         <View style={{ flexDirection:'row', justifyContent: 'space-between', alignItems: 'center',}} >
           <Text style={styles.fjsectionTitle}>Featured Jobs</Text>
           <Text style={styles.fjseealltext}> See all </Text>
@@ -225,14 +239,47 @@ const styles = StyleSheet.create({
     borderRadius: 25,
   },
   searchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderRadius: 10,
+    padding: 5,
+    paddingVertical:10,
     marginTop: 16,
     marginBottom: 16,
+    
+  },
+  searchInputContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#E8E8E8',
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical:6,
+    marginRight: 5,
+    
+  },
+  searchIcon: {
+    width: 24,
+    height: 24,
+    marginRight: 8,
   },
   searchInput: {
+    flex: 1,
     backgroundColor: '#E8E8E8',
     borderRadius: 10,
     padding: 12,
     fontSize: 16,
+  },
+  filterIconContainer: {
+    backgroundColor: '#E8E8E8',
+    borderRadius: 10,
+    padding: 16,
+    marginLeft: 8,
+  },
+  filterIcon: {
+    width: 24,
+    height: 24,
   },
   fjsectionTitle: {
     marginTop: 15,
